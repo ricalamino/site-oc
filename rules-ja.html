@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="囲碁（Go/Baduk）の完全なルールを学びましょう。棋盤、石の酋、取り込め、領域を貼るまで詳層なガイド。">
+    <meta name="keywords" content="囲碁, Go, Baduk, ルール, 下い方, 棋盤, 石, 取り込め, 領域, 計点">
+    <meta property="og:title" content="囲碁のルール - 古代の戦略ゲーム">
+    <meta property="og:description" content="囲碁（Go/Baduk）の完全なルールを学びましょう。ゲームを始めるための詳層なガイド。">
+    <meta property="og:image" content="https://ricalamino.github.io/site-openclaw/og-image.png">
+    <meta property="og:url" content="https://ricalamino.github.io/site-openclaw/rules-ja.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="囲碁のルール - 古代の戦略ゲーム">
+    <meta name="twitter:description" content="囲碁（Go/Baduk）の完全なルールを学びましょう。ゲームを始めるための詳層なガイド。">
+    <meta name="twitter:image" content="https://ricalamino.github.io/site-openclaw/og-image.png">
+    <link rel="canonical" href="https://ricalamino.github.io/site-openclaw/rules-ja.html">
+    <title>囲碁のルール</title>
+    <link rel="stylesheet" href="shared-styles.css">
+</head>
+<body>
+    <header>
+        <div class="language-selector">
+            <a href="index.html" class="lang-btn">🏠</a>
+            <a href="index-en.html" class="lang-btn">EN</a>
+            <a href="index-pt.html" class="lang-btn">PT</a>
+            <a href="index-zh.html" class="lang-btn">ZH</a>
+            <a href="index-ja.html" class="lang-btn active">JA</a>
+            <a href="index-ko.html" class="lang-btn">KO</a>
+        </div>
+        <div class="container">
+            <h1>⚫⚪ 囲碁 - ルール</h1>
+            <p class="tagline">古代の戦略ゲームをプレイする方法を学ぶ</p>
+            <nav class="main-nav">
+                <a href="index-ja.html" class="nav-link">ホーム</a>
+                <a href="rules-ja.html" class="nav-link active">ルール</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="index-ja.html">← ホームに戻る</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="rules-intro">
+            <div class="container">
+                <h2>囲碁の基本ルール</h2>
+                <p>
+                    囲碁は非常にシンプルなルールセットを持っていますが、無限の戦略的深さを提供します。
+                    このページでは、プレイを開始するための基本的な概念を学びます。
+                </p>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>盤</h2>
+                <div class="rule-content">
+                    <p>
+                        ゲームは<strong>碁盤</strong>と呼ばれるボード上で行われ、19×19の交点があります（合計361ポイント）。
+                        初心者向けに、9×9や13×13などのより小さなボードも存在します。
+                    </p>
+                    <p>プレイヤーは次を使用します：</p>
+                    <ul class="rule-list">
+                        <li><strong>黒い石</strong>（先手 - ゲームを開始するプレイヤー）</li>
+                        <li><strong>白い石</strong>（後手 - 2番目のプレイヤー）</li>
+                    </ul>
+                    <p>
+                        石はボードの<strong>交点</strong>に配置され、マスではありません。
+                        一度配置されると、石が捕らえられた場合（盤から移除される）のみ動きます。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>ゲームの目的</h2>
+                <div class="rule-content">
+                    <p>ゲーム終了時に対手よりも<strong>より多くの領土をコントロール</strong>することが目的です。</p>
+                    <p>
+                        領土とは、あなたの石に囲まれた空のスペースです。
+                        コントロールするエリアが多いほど、スコアが高くなります。最後に最も領土を持っている人が勝者です。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>ライバーティと捕獲</h2>
+                <div class="rule-content">
+                    <p>
+                        石に隣接する空のポイント（上下左右）がある場合、石は<strong>ライバーティ</strong>を持っています。
+                        同じ色で接触する石は<strong>グループ</strong>を形成し、そのライバーティを共有します。
+                    </p>
+                    <p>
+                        グループがすべてのライバーティを失うと、それは<strong>捕獲</strong>され盤から移除されます。
+                        これは対手がグループに隣接する最後の空ポイントに石を配置するときに発生します。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>自殺ルール</h2>
+                <div class="rule-content">
+                    <p>
+                        配置された石がそれ自体またはそのグループのライバーティを作成しない場合、
+                        ムーブは<strong>自殺</strong>と見なされます。
+                        言い換えれば、即座に捕捉される結果になる石を配置することは<strong>禁止</strong>されています。
+                    </p>
+                    <p>
+                        1つの例外があります：あなたは自分のライバーティを失っている間に対手の石をキャプチャできます、
+                        あなたの石/グループがキャプチャからライバーティを獲得する限り。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>コウルール</h2>
+                <div class="rule-content">
+                    <p>
+                        <strong>コウルール</strong>は、同じ石をキャプチャすることで対手の最後のムーブを即座に取り消すことを禁じています。
+                    </p>
+                    <p>
+                        このルールは、両方のプレイヤーが同じ石を交互にキャプチャして再キャプチャする無限ループを防止します。
+                        コウの後に再度キャプチャするには、ボード上の他の場所で少なくとも1つのムーブを行う必要があります。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>領土のカウント</h2>
+                <div class="rule-content">
+                    <p>ゲーム終了時、スコアは以下をカウントして計算されます：</p>
+                    <ul class="rule-list">
+                        <li><strong>各色の石に囲まれた空のポイント</strong>（領土）</li>
+                        <li><strong>対手にキャプチャされた石</strong>（ポイントとしてカウント）</li>
+                    </ul>
+                    <p>
+                        スコアリング変動があります（コミなど - 2番目のムーブを持つ白に与えられるボーナス）、
+                        しかし基本的な原則は：より多くのスペースをコントロールする人が勝つということです。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>ゲーム終了</h2>
+                <div class="rule-content">
+                    <p>
+                        両方のプレイヤーが連続してパスするとゲームは終了します（利益のあるムーブがないことを示す）。
+                        この時点で、ボードがカウントされ、勝者が決定されます。
+                    </p>
+                    <p>
+                        囲碁のゲームは、数分（小さなボードまたはブリッツ）から数時間（専門家間のクラシックゲーム）まで続く可能性があります。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-to-action">
+            <div class="container">
+                <h2>始める準備はできていますか？</h2>
+                <p>
+                    基本的なルールを知った今、あなたの最初のゲームの準備ができています。
+                    相手を見つけ、盤を見つけ（またはオンラインアプリ）、プレイを開始してください。
+                </p>
+                <div class="link-box">
+                    <a href="https://www.baduk.com.br" target="_blank" class="cta-button">Baduk.com.brで詳細を学ぶ</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 囲碁。開発中のコンテンツ。</p>
+            <p>参照：<a href="https://www.baduk.com.br" target="_blank">baduk.com.br</a> by Ricardo Alamino</p>
+        </div>
+    </footer>
+
+    <script>
+        localStorage.setItem('baduk-language', 'ja');
+    </script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprenda as regras completas do Baduk (Go). Guia detalhado cobrindo o tabuleiro, movimento das peças, captura, território e contagem de pontos.">
+    <meta name="keywords" content="Baduk, Go, regras, como jogar, tabuleiro, peças, captura, território, pontos">
+    <meta property="og:title" content="Regras do Baduk - O Jogo de Go">
+    <meta property="og:description" content="Aprenda as regras completas do Baduk (Go). Guia detalhado para começar a jogar.">
+    <meta property="og:image" content="https://ricalamino.github.io/site-openclaw/og-image.png">
+    <meta property="og:url" content="https://ricalamino.github.io/site-openclaw/regras.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Regras do Baduk - O Jogo de Go">
+    <meta name="twitter:description" content="Aprenda as regras completas do Baduk (Go). Guia detalhado para começar a jogar.">
+    <meta name="twitter:image" content="https://ricalamino.github.io/site-openclaw/og-image.png">
+    <link rel="canonical" href="https://ricalamino.github.io/site-openclaw/regras.html">
+    <title>Regras do Baduk - O Jogo de Go</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>⚫⚪ Baduk - Regras</h1>
+            <p class="tagline">Aprenda como jogar o antigo jogo de estratégia</p>
+        </div>
+    </header>
+
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="index.html">← Voltar para Home</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="rules-intro">
+            <div class="container">
+                <h2>As Regras Básicas do Baduk</h2>
+                <p>
+                    O Baduk tem um conjunto de regras muito simples, mas oferece profundidade estratégica infinita.
+                    Nesta página, você aprenderá os conceitos fundamentais para começar a jogar.
+                </p>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>O Tabuleiro</h2>
+                <div class="rule-content">
+                    <p>
+                        O jogo é jogado em um tabuleiro chamado <strong>goban</strong>, que possui 19×19 intersecções
+                        (361 pontos no total). Existem também tabuleiros menores para iniciantes, como 9×9 e 13×13.
+                    </p>
+                    <p>
+                        Os jogadores utilizam:
+                    </p>
+                    <ul class="rule-list">
+                        <li><strong>Pedras pretas</strong> (Sente - o jogador que começa)</li>
+                        <li><strong>Pedras brancas</strong> (Gote - o segundo jogador)</li>
+                    </ul>
+                    <p>
+                        As pedras são colocadas nas <strong>intersecções</strong> do tabuleiro, não nos quadrados.
+                        Uma vez colocada, a pedra só se move se for capturada (removida do tabuleiro).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>Objetivo do Jogo</h2>
+                <div class="rule-content">
+                    <p>
+                        O objetivo é <strong>controlar mais território</strong> do que o adversário ao final da partida.
+                    </p>
+                    <p>
+                        Território é o espaço vazio circundado por suas pedras. Quanto mais área você controlar,
+                        maior será sua pontuação. A vitória vai para quem tiver mais território no final.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>Liberdades e Captura</h2>
+                <div class="rule-content">
+                    <p>
+                        Uma pedra tem <strong>liberdades</strong> quando há pontos vazios adjacentes a ela
+                        (acima, abaixo, esquerda ou direita). Pedras da mesma cor que se tocam formam um
+                        <strong>grupo</strong>, que compartilha suas liberdades.
+                    </p>
+                    <p>
+                        Quando um grupo perde todas as suas liberdades, ele é <strong>capturado</strong> e removido
+                        do tabuleiro. Isso pode acontecer quando o adversário coloca uma pedra no último ponto
+                        vazio adjacente ao grupo.
+                    </p>
+                    <p class="example-box">
+                        <strong>Exemplo:</strong> Se um grupo tem apenas uma liberdade restante, é dito estar em
+                        <strong>atari</strong> (perigo iminente). O próximo movimento do adversário pode capturá-lo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>A Regra de Suicídio</h2>
+                <div class="rule-content">
+                    <p>
+                        Um movimento é considerado <strong>suicida</strong> quando uma pedra colocada não cria
+                        nenhuma liberdade para si mesma ou seu grupo. Em outras palavras, colocar uma pedra que
+                        resultaria em sua imediata captura é <strong>proibido</strong>.
+                    </p>
+                    <p>
+                        Existe uma exceção: você pode capturar as pedras do adversário ao mesmo tempo em que
+                        perde suas próprias liberdades, desde que sua pedra/grupo ganhe liberdades pela captura.
+                    </p>
+                    <p class="example-box">
+                        <strong>Exemplo:</strong> Se colocar uma pedra circundada apenas por pedras inimigas,
+                        mas essa ação capturar essas pedras inimigas, o movimento é legal porque sua pedra
+                        ganha liberdades com a captura.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>A Regra de Ko</h2>
+                <div class="rule-content">
+                    <p>
+                        A <strong>regra de Ko</strong> (situação de interesse recíproco) proíbe que você desfaça
+                        imediatamente o último movimento do adversário capturando a mesma pedra.
+                    </p>
+                    <p>
+                        Essa regra previne loops infinitos onde os dois jogadores alternadamente capturam e
+                        recapturam a mesma pedra. Para capturar novamente após um Ko, você deve fazer pelo menos
+                        um movimento em outro lugar do tabuleiro.
+                    </p>
+                    <p class="example-box">
+                        <strong>Situação típica:</strong> Se o adversário capturar uma de suas pedras, você
+                        não pode imediatamente capturar a pedra que o capturou se isso recriasse a posição anterior.
+                        Você deve jogar em outro lugar primeiro.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>Contagem de Território</h2>
+                <div class="rule-content">
+                    <p>
+                        Ao final do jogo, a pontuação é calculada contando:
+                    </p>
+                    <ul class="rule-list">
+                        <li><strong>Pontos vazios circundados</strong> pelas pedras de cada cor (territorio)</li>
+                        <li><strong>Pedras capturadas</strong> pelo adversário (contadas como pontos)</li>
+                    </ul>
+                    <p>
+                        Existem variações de contagem (como komi - um bônus dado às brancas por terem o segundo movimento),
+                        mas o princípio básico é: quem controlar mais espaço vence.
+                    </p>
+                    <p class="example-box">
+                        <strong>Contagem simplificada:</strong> Se preto controla 70 pontos de território
+                        e brancas controlam 65, preto vence por 5 pontos.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>Handicap para Iniciantes</h2>
+                <div class="rule-content">
+                    <p>
+                        Para tornar o jogo mais equilibrado entre jogadores de níveis diferentes, existe o sistema
+                        de <strong>handicap</strong> (compensação). Jogadores mais fracos podem começar com pedras
+                        já colocadas no tabuleiro.
+                    </p>
+                    <p>
+                        As pedras de handicap são sempre pretas e são colocadas em posições fixas de grande importância
+                        estratégica antes do início do jogo:
+                    </p>
+                    <ul class="rule-list">
+                        <li><strong>2 pedras:</strong> Cantos opostos (para grandes diferenças de nível)</li>
+                        <li><strong>3-4 pedras:</strong> Vários cantos e centro</li>
+                        <li><strong>5-9 pedras:</strong> Distribuídas em pontos estratégicos</li>
+                    </ul>
+                    <p>
+                        Com handicap, as brancas jogam primeiro (quebram a vantagem das pretas). Isso permite que
+                        jogadores de níveis muito diferentes joguem competitivamente.
+                    </p>
+                    <p class="example-box">
+                        <strong>Para iniciantes:</strong> Se você é iniciante jogando contra alguém mais experiente,
+                        peça por 3-4 pedras de handicap para começar. Isso tornará o jogo muito mais interessante!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>Fim do Jogo</h2>
+                <div class="rule-content">
+                    <p>
+                        O jogo termina quando ambos os jogadores passam consecutivamente (indicando que não há
+                        mais movimentos lucrativos). Nesse momento, o tabuleiro é contado e o vencedor é determinado.
+                    </p>
+                    <p>
+                        Uma partida de Go pode durar de alguns minutos (em tabuleiros pequenos ou blitz) até várias horas
+                        (em jogos clássicos entre profissionais).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-to-action">
+            <div class="container">
+                <h2>Pronto para Começar?</h2>
+                <p>
+                    Agora que você conhece as regras básicas, está pronto para sua primeira partida!
+                    Encontre um adversário, um tabuleiro (ou um aplicativo online) e comece a jogar.
+                </p>
+                <div class="link-box">
+                    <a href="https://www.baduk.com.br" target="_blank" class="cta-button">
+                        Saiba Mais em Baduk.com.br
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Baduk. Conteúdo em desenvolvimento.</p>
+            <p>
+                Referência: <a href="https://www.baduk.com.br" target="_blank">baduk.com.br</a>
+                por Ricardo Alamino
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,464 @@
+/* Reset e estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Language Selector */
+.language-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 100;
+}
+
+.lang-btn {
+    padding: 8px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.lang-btn:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.lang-btn.active {
+    background-color: #e94560;
+    border-color: #e94560;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+/* Main navigation */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(233, 69, 96, 0.3);
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #e94560;
+    padding-bottom: 6px;
+}
+
+/* Main */
+main {
+    padding: 40px 0;
+}
+
+section {
+    margin: 60px 0;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #1a1a2e;
+    border-bottom: 3px solid #e94560;
+    padding-bottom: 15px;
+}
+
+/* Intro Section */
+.intro {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #555;
+}
+
+/* Learn More Section */
+.learn-more {
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.learn-more p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.link-box {
+    padding: 30px;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    border-left: 4px solid #e94560;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #e94560;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #d63350;
+    transform: translateY(-2px);
+}
+
+.credit {
+    margin-top: 20px;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Features Section */
+.features {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.feature-card {
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    border-top: 4px solid #e94560;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(233, 69, 96, 0.2);
+}
+
+.feature-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #1a1a2e;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Navigation breadcrumb */
+.breadcrumb {
+    background-color: #f0f0f0;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.breadcrumb a {
+    color: #e94560;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: #d63350;
+    text-decoration: underline;
+}
+
+/* Rules page styles */
+.rules-intro {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.rules-intro p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.rule-section {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #e94560;
+}
+
+.rule-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #1a1a2e;
+    border-bottom: 2px solid #e94560;
+    padding-bottom: 10px;
+}
+
+.rule-content {
+    line-height: 1.8;
+}
+
+.rule-content p {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.rule-list {
+    list-style-position: inside;
+    margin: 20px 0 20px 20px;
+    color: #555;
+}
+
+.rule-list li {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.example-box {
+    background-color: #f9f9f9;
+    border-left: 4px solid #e94560;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+.call-to-action {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    padding: 50px 40px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.call-to-action h2 {
+    color: white;
+    border-bottom-color: #e94560;
+    text-align: center;
+}
+
+.call-to-action p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* Language Landing Page */
+.landing-container {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.landing-header {
+    margin-bottom: 50px;
+}
+
+.landing-header h1 {
+    font-size: 2.5rem;
+    color: #1a1a2e;
+    margin-bottom: 20px;
+}
+
+.landing-header p {
+    font-size: 1.3rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.language-section h2 {
+    font-size: 2rem;
+    color: #1a1a2e;
+    margin-bottom: 40px;
+    border: none;
+}
+
+.language-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.language-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #1a1a2e;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.language-card:hover {
+    border-color: #e94560;
+    box-shadow: 0 4px 16px rgba(233, 69, 96, 0.2);
+    transform: translateY(-5px);
+}
+
+.language-flag {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.language-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.language-native {
+    font-size: 0.85rem;
+    color: #999;
+    margin-top: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a2e;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 80px;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 0.95rem;
+}
+
+footer a {
+    color: #e94560;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .language-selector {
+        flex-wrap: wrap;
+        width: 100%;
+        position: static;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .language-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+}

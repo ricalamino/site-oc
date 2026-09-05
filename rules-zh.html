@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="学习围棋（Go/Baduk）的完整规则。详细指南涵盖棋盘、下道、捕获、领域和计分。">
+    <meta name="keywords" content="围棋, Go, Baduk, 规则, 如何下棋, 棋盘, 下道, 捕获, 领域, 计分">
+    <meta property="og:title" content="围棋规则 - 古代策略游戏">
+    <meta property="og:description" content="学习围棋（Go/Baduk）的完整规则。开始游戏的详细指南。">
+    <meta property="og:image" content="https://ricalamino.github.io/site-openclaw/og-image.png">
+    <meta property="og:url" content="https://ricalamino.github.io/site-openclaw/rules-zh.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="围棋规则 - 古代策略游戏">
+    <meta name="twitter:description" content="学习围棋（Go/Baduk）的完整规则。开始游戏的详细指南。">
+    <meta name="twitter:image" content="https://ricalamino.github.io/site-openclaw/og-image.png">
+    <link rel="canonical" href="https://ricalamino.github.io/site-openclaw/rules-zh.html">
+    <title>围棋规则</title>
+    <link rel="stylesheet" href="shared-styles.css">
+</head>
+<body>
+    <header>
+        <div class="language-selector">
+            <a href="index.html" class="lang-btn">🏠</a>
+            <a href="index-en.html" class="lang-btn">EN</a>
+            <a href="index-pt.html" class="lang-btn">PT</a>
+            <a href="index-zh.html" class="lang-btn active">ZH</a>
+            <a href="index-ja.html" class="lang-btn">JA</a>
+            <a href="index-ko.html" class="lang-btn">KO</a>
+        </div>
+        <div class="container">
+            <h1>⚫⚪ 围棋 - 规则</h1>
+            <p class="tagline">学习如何玩这个古老的策略游戏</p>
+            <nav class="main-nav">
+                <a href="index-zh.html" class="nav-link">首页</a>
+                <a href="rules-zh.html" class="nav-link active">规则</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="index-zh.html">← 返回首页</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="rules-intro">
+            <div class="container">
+                <h2>围棋的基本规则</h2>
+                <p>
+                    围棋有一套非常简单的规则，但提供无限的战略深度。
+                    在这一页上，你将学习开始玩的基本概念。
+                </p>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>棋盘</h2>
+                <div class="rule-content">
+                    <p>
+                        游戏在称为<strong>棋盘</strong>的棋盘上进行，有19×19个交叉点（总共361个点）。
+                        初学者也可以使用更小的棋盘，如9×9和13×13。
+                    </p>
+                    <p>玩家使用：</p>
+                    <ul class="rule-list">
+                        <li><strong>黑棋</strong>（先手 - 开始的玩家）</li>
+                        <li><strong>白棋</strong>（后手 - 第二个玩家）</li>
+                    </ul>
+                    <p>
+                        棋子放在棋盘的<strong>交叉点</strong>上，而不是在方形里。
+                        一旦放置，棋子只有在被俘虏（从棋盘上移除）时才会移动。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>游戏的目标</h2>
+                <div class="rule-content">
+                    <p>目标是在游戏结束时<strong>控制比对手更多的领土</strong>。</p>
+                    <p>
+                        领土是被你的棋子包围的空地。你控制的地区越多，你的得分就越高。
+                        获胜者是在最后拥有最多领土的人。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>自由度和俘虏</h2>
+                <div class="rule-content">
+                    <p>
+                        当棋子周围有空的点时，它有<strong>自由度</strong>（上、下、左或右）。
+                        同色且接触的棋子形成一个<strong>组</strong>，共享其自由度。
+                    </p>
+                    <p>
+                        当一个组失去所有自由度时，它被<strong>俘虏</strong>并从棋盘上移除。
+                        当你的对手在该组邻近的最后一个空点放置棋子时，就会发生这种情况。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>自杀规则</h2>
+                <div class="rule-content">
+                    <p>
+                        当放置的棋子对自己或其组没有创建任何自由度时，移动被认为是<strong>自杀</strong>。
+                        换句话说，放置一个会导致立即被俘获的棋子是<strong>禁止的</strong>。
+                    </p>
+                    <p>
+                        有一个例外：你可以在失去自己的自由度的同时捕获对手的棋子，
+                        只要你的棋子/组从俘虏中获得自由度。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>劫（Ko）规则</h2>
+                <div class="rule-content">
+                    <p>
+                        <strong>劫规则</strong>禁止你通过俘获同一棋子来立即撤销对手的最后一步。
+                    </p>
+                    <p>
+                        此规则防止无限循环，其中两个玩家交替俘获和重新俘获同一棋子。
+                        要在劫之后再次捕获，你必须在棋盘的其他地方至少进行一次移动。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>领土计数</h2>
+                <div class="rule-content">
+                    <p>在游戏结束时，通过计数来计算分数：</p>
+                    <ul class="rule-list">
+                        <li><strong>被每种颜色的棋子包围的空点</strong>（领土）</li>
+                        <li><strong>被对手俘获的棋子</strong>（计为点数）</li>
+                    </ul>
+                    <p>
+                        存在计分变化（如贴目 - 给白棋的奖励，因为它有第二步），
+                        但基本原则是：谁控制的空间多谁就赢。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rule-section">
+            <div class="container">
+                <h2>游戏结束</h2>
+                <div class="rule-content">
+                    <p>
+                        当两个玩家连续通过时，游戏结束（表示没有更多有利的移动）。
+                        此时，对棋盘进行计数，确定获胜者。
+                    </p>
+                    <p>
+                        围棋游戏可以持续几分钟（在小棋盘或快速游戏中）到几个小时（在专业人士之间的经典游戏中）。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-to-action">
+            <div class="container">
+                <h2>准备好开始了吗？</h2>
+                <p>
+                    既然你知道了基本规则，你就准备好进行第一场游戏了！
+                    找到一个对手，一个棋盘（或一个在线应用程序），然后开始玩。
+                </p>
+                <div class="link-box">
+                    <a href="https://www.baduk.com.br" target="_blank" class="cta-button">在Baduk.com.br上了解更多</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 围棋。内容开发中。</p>
+            <p>参考：<a href="https://www.baduk.com.br" target="_blank">baduk.com.br</a> 由Ricardo Alamino</p>
+        </div>
+    </footer>
+
+    <script>
+        localStorage.setItem('baduk-language', 'zh');
+    </script>
+</body>
+</html>

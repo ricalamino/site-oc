@@ -1,0 +1,11 @@
+# robots.txt for https://ricalamino.github.io/site-openclaw/
+# Allow all crawlers to index the site
+
+User-agent: *
+Allow: /
+
+# Specify sitemap location
+Sitemap: https://ricalamino.github.io/site-openclaw/sitemap.xml
+
+# Optional: Crawl delay to reduce server load (in seconds)
+Crawl-delay: 1

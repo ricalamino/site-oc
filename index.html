@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Baduk - The Ancient Game of Go. Explore the world of Baduk (Go) across 5 languages: English, Portuguese, Chinese, Japanese, and Korean.">
+    <meta name="keywords" content="Baduk, Go, game, strategy, board game, ancient game">
+    <meta property="og:title" content="Baduk - The Ancient Game of Go">
+    <meta property="og:description" content="Explore the world of Baduk (Go) across 5 languages. Learn the rules and history of this ancient strategy game.">
+    <meta property="og:image" content="https://ricalamino.github.io/site-openclaw/og-image.png">
+    <meta property="og:url" content="https://ricalamino.github.io/site-openclaw/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Baduk - The Ancient Game of Go">
+    <meta name="twitter:description" content="Explore the world of Baduk (Go) across 5 languages. Learn the rules and history of this ancient strategy game.">
+    <meta name="twitter:image" content="https://ricalamino.github.io/site-openclaw/og-image.png">
+    <link rel="canonical" href="https://ricalamino.github.io/site-openclaw/">
+    <title>Baduk - The Ancient Game of Go</title>
+    <link rel="stylesheet" href="shared-styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>⚫⚪ Baduk</h1>
+            <p class="tagline">The Ancient Game of Go</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container landing-container">
+            <div class="landing-header">
+                <h1>Welcome to Baduk</h1>
+                <p>Choose your language and explore the world of Go, an ancient strategy game played by millions worldwide.</p>
+            </div>
+
+            <div class="language-section">
+                <h2>🌍 Select Your Language</h2>
+                <div class="language-grid">
+                    <a href="index-en.html" class="language-card">
+                        <div class="language-flag">🇬🇧</div>
+                        <div class="language-name">English</div>
+                    </a>
+                    <a href="index-pt.html" class="language-card">
+                        <div class="language-flag">🇵🇹</div>
+                        <div class="language-name">Português</div>
+                        <div class="language-native">Baduk</div>
+                    </a>
+                    <a href="index-zh.html" class="language-card">
+                        <div class="language-flag">🇨🇳</div>
+                        <div class="language-name">中文</div>
+                        <div class="language-native">圍棋</div>
+                    </a>
+                    <a href="index-ja.html" class="language-card">
+                        <div class="language-flag">🇯🇵</div>
+                        <div class="language-name">日本語</div>
+                        <div class="language-native">囲碁</div>
+                    </a>
+                    <a href="index-ko.html" class="language-card">
+                        <div class="language-flag">🇰🇷</div>
+                        <div class="language-name">한국어</div>
+                        <div class="language-native">바둑</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Baduk. Exploring the ancient game worldwide.</p>
+            <p>Developed with ⚫⚪ by Ricardo Alamino</p>
+        </div>
+    </footer>
+
+    <script>
+        // Auto-detect user language and redirect if available
+        function getLanguagePreference() {
+            const saved = localStorage.getItem('baduk-language');
+            if (saved) return saved;
+
+            const browserLang = navigator.language.split('-')[0].toLowerCase();
+            const supportedLangs = {
+                'en': 'en',
+                'pt': 'pt',
+                'zh': 'zh',
+                'ja': 'ja',
+                'ko': 'ko'
+            };
+
+            return supportedLangs[browserLang] || null;
+        }
+
+        // Auto-redirect to browser language on first visit
+        window.addEventListener('load', function() {
+            const lang = getLanguagePreference();
+            if (lang) {
+                window.location.href = `index-${lang}.html`;
+            }
+        });
+    </script>
+</body>
+</html>
